@@ -5,7 +5,9 @@ def two_sum(nums,target):
         if needed in seen:
             return (seen[needed],i)
         seen[nums[i]]=i
-nums=[2,4,7,3,1]
-target=9
+n=int(input("Enter the number of values:"))
+nums=list(map(int,input().split()))
+print(nums)
+target=int(input("Enter the target value:"))
 ans=two_sum(nums,target)
 print(ans)
