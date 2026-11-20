@@ -16,15 +16,15 @@ b=int(input("Enter second number:"))
 ans=hcf(a,b)
 print("HCF of",a,"and",b,"is",ans)"""
 def hcf(a,b):
-    dict={}
+    factors=[]
     if a>b:
         small=b
     else:
         small=a
     for i in range(1,small+1):
         if a%i==0 and b%i==0:
-            dict[i]=i
-    return max(dict.values())
+            factors.append(i)
+    return max(factors)
 a=int(input("Enter first number:"))
 b=int(input("Enter second number:"))
 ans=hcf(a,b)
